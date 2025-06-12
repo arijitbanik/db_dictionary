@@ -1,4 +1,4 @@
-module github.com/gsiems/go-db-meta
+module github.com/arijitbanik/db_dictionary/go-db-meta
 
 go 1.20
 
