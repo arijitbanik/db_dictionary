@@ -26,7 +26,7 @@ SELECT current_database () AS table_catalog,
             WHEN a.attnotnull THEN 'NO'
             ELSE 'YES'
             END AS is_nullable,
-        COALESCE(pg_catalog.pg_get_expr ( ad.adbin, ad.adrelid )::text, '') AS column_default,,
+        COALESCE(pg_catalog.pg_get_expr ( ad.adbin, ad.adrelid )::text, '') AS column_default,
         CASE
             WHEN t.typtype = 'd' THEN current_database()
         END AS domain_catalog,
